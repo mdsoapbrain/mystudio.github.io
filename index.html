@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,950 +50,997 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<!-- For my map! -->
+    <!-- Bootstrap -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
 	</head>
+
+
 	<body>
 	<div id="colorlib-page">
-		<div class="container-wrap">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<div class="text-center">
-				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
-				<h1 id="colorlib-logo"><a href="index.html">Haydn Cheong</a></h1>
-				<span class="position"><a href="#">A student</a> at the University of Edinburgh.</span>
-			</div>
-			<nav id="colorlib-main-menu" role="navigation" class="navbar">
-				<div id="navbar" class="collapse">
-					<ul>
-						<li><a href="#" data-nav-section="home">Home</a></li>
-						<li class="active"><a href="#" data-nav-section="photos">Photos</a></li>
-						<li><a href="#" data-nav-section="motivation">Motivation</a></li>
-						<li><a href="#" data-nav-section="skills">Skills</a></li>
-						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="experience">Experience</a></li>
-						<li><a href="#" data-nav-section="work">Work</a></li>
-						<li><a href="#" data-nav-section="blog">Blog</a></li>
-						<li><a href="#" data-nav-section="contact">Contact</a></li>
-					</ul>
+			<div class="container-wrap">
+			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+			<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+				<div class="text-center">
+					<div class="author-img" style="background-image: url(images/about.jpg);"></div>
+					<h1 id="colorlib-logo"><a href="index.html">Haydn Cheong</a></h1>
+					<span class="position"><a href="#">A student</a> at the University of Edinburgh.</span>
 				</div>
-				<div class="colorlib-footer">
-					<ul>
-						<li><a href="https://www.facebook.com/cheongchonin" target="blank"><i class="icon-facebook2"></i></a></li>
-						<li><a href="https://twitter.com/haydncheong" target="blank"><i class="icon-twitter2"></i></a></li>
-						<li><a href="https://www.instagram.com/heyhaydn/" target="blank"><i class="icon-instagram"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/chonin/" target="blank"><i class="icon-linkedin2"></i></a></li>
-					</ul>
-				</div>
+				<nav id="colorlib-main-menu" role="navigation" class="navbar">
+					<div id="navbar" class="collapse">
+						<ul>
+							<li><a href="#" data-nav-section="home">Home</a></li>
+							<li class="active"><a href="#" data-nav-section="photos">Photos</a></li>
+							<li><a href="#" data-nav-section="motivation">Motivation</a></li>
+							<li><a href="#" data-nav-section="skills">Skills</a></li>
+							<li><a href="#" data-nav-section="education">Education</a></li>
+							<li><a href="#" data-nav-section="experience">Experience</a></li>
+							<li><a href="#" data-nav-section="work">Work</a></li>
+							<li><a href="#" data-nav-section="blog">Blog</a></li>
+							<li><a href="#" data-nav-section="contact">Contact</a></li>
+						</ul>
+					</div>
+					<div class="colorlib-footer">
+						<ul>
+							<li><a href="https://www.facebook.com/cheongchonin" target="blank"><i class="icon-facebook2"></i></a></li>
+							<li><a href="https://twitter.com/haydncheong" target="blank"><i class="icon-twitter2"></i></a></li>
+							<li><a href="https://www.instagram.com/heyhaydn/" target="blank"><i class="icon-instagram"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/chonin/" target="blank"><i class="icon-linkedin2"></i></a></li>
+						</ul>
+					</div>
+						
+					</aside>
+				</nav>
+	
+				<div id="colorlib-main">
+					<section id="colorlib-hero" class="js-fullheight" data-section="home">
+						<div class="colorlib-narrow-content">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+											<div class="col-md-12">
+												<div class="about-desc">
+													<span class="heading-meta">Favourite quote: <br /> <i>"I propose to consider the question, 'Can machines think?" - Alan Turing </i></span>
+													<h1 class="colorlib-heading">Welcome to my personal page!</h1>
+													<p><strong>Hi, I'm Haydn</strong>  <br /> A driven, curious and organized Electronic Engineering graduate. Currently pursuing the studies of AI at the University of Edinburgh. I enjoy solving puzzles and am passionate about Artificial Intelligence and how it can help businesses to deliver values with lower resources. I aim to enjoy making a contribution to the field of engineering and to AI research in particular. I am sure this will be an exciting lifelong journey and I hope to be witness to moments of profound beauty, even if a global optimum is not achieved in my lifetime.</p>
+														<p><a href="Downloads/CV_HaydnC.pdf" download target="blank"> Download CV <i class="icon-download4"></i></a></p>
+												</div>
+											</div>
+										</div>
+<!-- ***** -->
+<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+	
+	<!-- **** Here my map -->
+	<!-- Map content -->
+	<div id="world-map-gdp" style="height:230px;"></div>
+</div>
+	<!-- jQuery -->
+	<script src="js/jquery_1.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap_1.min.js"></script>
+	<!-- Custom Theme Scripts -->
+	<script src="build/custom.min.js"></script>
+<!-- **** Here my map -->
+						<h3 class="line_30">View my photography</h3> 
+						 <table class="countries_list">
+						  <tbody>
+							<tr>
+							  <td>England</td>
+							  <td class="fs15 fw700 text-right">4</td>
+							</tr>
+							<tr>
+							  <td>Germany</td>
+							  <td class="fs15 fw700 text-right">7</td>
+							</tr>
+							<tr>
+							  <td>Portugal</td>
+							  <td class="fs15 fw700 text-right">6</td>
+							</tr>
+							<tr>
+							  <td>Spain</td>
+							  <td class="fs15 fw700 text-right">8</td>
+							</tr>
+							<tr>
+							  <td>Amsterdam</td>
+							  <td class="fs15 fw700 text-right">8</td>
+							</tr>
+							<tr>
+							  <td>China</td>
+							  <td class="fs15 fw700 text-right">15</td>
+							</tr>
+						  </tbody>
+						</table>	
+<!-- ***** -->
+									</div>
+								</div>
+							</div>
+					</section>
+	
+	
+					<section id="colorlib-hero" class="js-fullheight" data-section="photos">
+						<div class="flexslider js-fullheight">
+							<ul class="slides">
+								<li style="background-image: url(images/img_bg_4.jpg);" >
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+	
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li style="background-image: url(images/img_bg_26.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li style="background-image: url(images/img_bg_25.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner js-fullheight">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li style="background-image: url(images/img_bg_9.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid"	>
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+	
+								<li style="background-image: url(images/img_bg_29.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li> 
+								
+								<li style="background-image: url(images/img_bg_30.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+	
+								<li style="background-image: url(images/img_bg_31.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li> 
+	
+								<li style="background-image: url(images/img_bg_5.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li style="background-image: url(images/img_bg_8.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li> 
+								<li style="background-image: url(images/img_bg_6.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li style="background-image: url(images/img_bg_22.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li style="background-image: url(images/img_bg_27.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li style="background-image: url(images/img_bg_23.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li style="background-image: url(images/img_bg_24.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li style="background-image: url(images/img_bg_20.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li style="background-image: url(images/img_bg_2.jpg);">
+									<div class="overlay"></div>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+												<div class="slider-text-inner">
+													<div class="desc">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+	
+								</ul>
+							</div>
+					</section>
 					
-				</aside>
-			</nav>
-
-			<div id="colorlib-main">
-				<section id="colorlib-hero" class="js-fullheight" data-section="home">
-					<div class="colorlib-narrow-content">
+					<section class="colorlib-services" data-section="motivation">
+						<div class="colorlib-narrow-content">
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+									<span class="heading-meta">Motivation</span>
+									<h2 class="colorlib-heading">What wakes me up every morning?</h2>
+								</div>
+							</div>
+							<div class="row row-pt-md">
+								<div class="col-md-4 text-center animate-box">
+									<div class="services color-1">
+										<span class="icon">
+											<i class="icon-bulb"></i>
+										</span>
+										<div class="desc">
+											<h3>Innovative Ideas</h3>
+											<p>With open source, development platform and online courses. The abundance of information incubate ideas that can potentially impact lives of millions!</p>
+										<!--https://www.google.com/search?q=development+platform&oq=development+platform&aqs=chrome..69i57j69i65l2j0l3.3222j0j7&sourceid=chrome&ie=UTF-8-->
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 text-center animate-box">
+									<div class="services color-3">
+										<span class="icon">
+											<i class="icon-phone3"></i>
+										</span>
+										<div class="desc">
+											<h3>Ubiquitous of Electronics</h3>
+											<p>The distribution of electronic devices has infused into our everyday life, rescue us from drudgery and redefined what can be done during our lifetime!</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 text-center animate-box">
+									<div class="services color-2">
+										<span class="icon">
+											<i class="icon-data"></i>
+										</span>
+										<div class="desc">
+											<h3>Moore's Law 2.0</h3>
+											<!--
+											<p>Moore's Law predicted the number of transistors on IC boards doubles every 18 months. While the state-of-the-art 7nm has overtaken the 10nm chips, the World's No.2 chipmaker GlobalFoundries has halted the 7nm production based on economic factors. </p>
+											https://press.trendforce.com/press/20180524-3106.html
+											<p>Since the Moore's Law is converging, the explosive growth of data available is the new Moore's Law! In 2017 alone, > 300 hr of video uploaded on Youtube per min, and > 100M images posted on Instagram every day! </p>
+											<p>If Moore's Law has enable faster computation, Moore's Law 2.0 yields smarter devices!</p>
+										-->
+											<!--https://press.trendforce.com/press/20180524-3106.html-->
+											<p>Explosive growth of data and halt of Moore's Law bring forth the Moore's Law 2.0!
+											If Moore's Law has enable faster computation, Moore's Law 2.0 yields smarter devices!</p>
+										</div>
+									</div>
+								</div>
+	
+								<div class="col-md-4 text-center animate-box">
+									<div class="services color-4">
+										<span class="icon">
+											<i class="icon-layers2"></i>
+										</span>
+										<div class="desc">
+											<h3>Personalization of Products</h3>
+											<p>AI can characterise user behavior, preference and needs at a level beyond most people can imagine. This yields Personalization user experience and products. With this dynamic setting, 1-to-1 touchpoints, there's no need for "One size fits all"!</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 text-center animate-box">
+									<div class="services color-5">
+										<span class="icon">
+											<i class="icon-data"></i>
+										</span>
+										<div class="desc">
+											<h3>Commercialization of AI</h3>
+											<p>After the A.I. winter in the 80s' and 90s', now it's time to shine with: (1)Moore's Law (2)Moore's Law 2.0 (3)The Cloud. Focusing on R&D in narrow-AI has proven success in enhancing value to user experience, saving cost and lowering risks. Resulted in A.I. companies leading the world.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 text-center animate-box">
+									<div class="services color-6">
+										<span class="icon">
+											<i class="icon-phone3"></i>
+										</span>
+										<div class="desc">
+											<h3>Digitalization of Daily Life</h3>
+											<p>With the support of Fiber-optic communication and the imminent 5G technology, IoT and others will further digitalize our daily life so that we can have more time, health and energy to focus on what matters for us!</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+						<div class="overlay"></div>
+						<div class="colorlib-narrow-content">
+							<div class="row">
+							</div>
+							<div class="row">
+								<div class="col-md-3 text-center animate-box">
+									<span class="colorlib-counter js-counter" data-from="0" data-to="8" data-speed="5000" data-refresh-interval="50"></span>
+									<span class="colorlib-counter-label">Projects</span>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+		
+					<section class="colorlib-skills" data-section="skills">
+						<div class="colorlib-narrow-content">
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+									<span class="heading-meta">My Specialty</span>
+									<h2 class="colorlib-heading animate-box">My Skills</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<p>Professional Skills</p>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+									<div class="progress-wrap">
+										<h3>Python & C</h3>
+										<div class="progress">
+											 <div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
+											  aria-valuemin="0" aria-valuemax="100" style="width:85%">
+											<span>85%</span>
+											  </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+									<div class="progress-wrap">
+										<h3>Java</h3>
+										<div class="progress">
+											 <div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
+											  aria-valuemin="0" aria-valuemax="100" style="width:80%">
+											<span>80%</span>
+											  </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+									<div class="progress-wrap">
+										<h3>Neural Network</h3>
+										<div class="progress">
+											 <div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
+											  aria-valuemin="0" aria-valuemax="100" style="width:75%">
+											<span>75%</span>
+											  </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+									<div class="progress-wrap">
+										<h3>Reinforcement learning</h3>
+										<div class="progress">
+											 <div class="progress-bar color-4" role="progressbar" aria-valuenow="70"
+											  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+											<span>70%</span>
+											  </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+									<div class="progress-wrap">
+										<h3>Natural Language Processing</h3>
+										<div class="progress">
+											 <div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+											  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+											<span>70%</span>
+											  </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+									<div class="progress-wrap">
+										<h3>Data handling</h3>
+										<div class="progress">
+											 <div class="progress-bar color-6" role="progressbar" aria-valuenow="75"
+											  aria-valuemin="0" aria-valuemax="100" style="width:75%">
+											<span>75%</span>
+											  </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+									<div class="progress-wrap">
+										<h3>MATLAB, LabVIEW, FPGA</h3>
+										<div class="progress">
+											 <div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
+											  aria-valuemin="0" aria-valuemax="100" style="width:85%">
+											<span>85%</span>
+											  </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+									<div class="progress-wrap">
+										<h3>Probability and statistic</h3>
+										<div class="progress">
+											 <div class="progress-bar color-2" role="progressbar" aria-valuenow="75"
+											  aria-valuemin="0" aria-valuemax="100" style="width:75%">
+											<span>75%</span>
+											  </div>
+										</div>
+									</div>
+								</div>
+	
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<p>Personal Skills</p>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+									<div class="progress-wrap">
+										<h3>Team player</h3>
+										<div class="progress">
+											 <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+											  aria-valuemin="0" aria-valuemax="100" style="width:90%">
+											<span>90%</span>
+											  </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+									<div class="progress-wrap">
+										<h3>Problem solving</h3>
+										<div class="progress">
+											 <div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
+											  aria-valuemin="0" aria-valuemax="100" style="width:85%">
+											<span>85%</span>
+											  </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+									<div class="progress-wrap">
+										<h3>Time management</h3>
+										<div class="progress">
+											 <div class="progress-bar color-3" role="progressbar" aria-valuenow="80"
+											  aria-valuemin="0" aria-valuemax="100" style="width:80%">
+											<span>80%</span>
+											  </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+									<div class="progress-wrap">
+										<h3>Communication</h3>
+										<div class="progress">
+											 <div class="progress-bar color-4" role="progressbar" aria-valuenow="85"
+											  aria-valuemin="0" aria-valuemax="100" style="width:85%">
+											<span>85%</span>
+											  </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+		
+					<section class="colorlib-education" data-section="education">
+						<div class="colorlib-narrow-content">
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+									<span class="heading-meta">Education</span>
+									<h2 class="colorlib-heading animate-box">Education</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="fancy-collapse-panel">
+										<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+											<div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingTwo">
+													<h4 class="panel-title">
+														<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">BENG (HONOURS) Electrical and Electronic Engineering
+														</a>
+													</h4>
+												</div>
+												<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+													<div class="panel-body">
+														<p><strong>The University of Sheffield</strong> - <i>2015-2018 (Achieved 1st Class Honours)</i></p> 
+															<ul>
+																<li><u>Enrolled modules:</u></li>
+																<ul>
+																	<b>1st Year:</b>
+																	<li>Mathematics(Electrical)</li>
+																	<li>Introduction to Energy</li>
+																	<li>Programming - C & Matlab</li>
+																	<li>System Design Analysis</li>
+																	<li>Electronic Devices and Circuits</li>
+																	<li>Global Engineering Challenge Week</li>
+																</ul>
+																<ul>
+																	<b>2nd Year:</b>
+																	<li>Mathematics 2(Electrical)</li>
+																	<li>Electrical Energy & Conversion</li>
+																	<li>Analogue & Digital Electronics</li>
+																	<li>Communication Electronics</li>
+																	<li>Engineering Software Design</li>
+																	<ul><li>Designed a simple vending machine and implemented on a NXP FRDM KL25Z Board</li></ul>
+																	<li>Design Project </li>
+																	<ul><li>Using a Nexys4 DDR Atrix-7 FPGA Board for fundamental arithmetic</li></ul>
+																	<li>Industrial Project</li>
+																	<li>Project Management & Human Resource Management for Engineers</li>
+																	<li>Engineering - You're Hired</li>
+																</ul>
+																<ul>
+																	<b>3rd Year:</b>
+																	<li>Mathematics 3(Electrical)</li>
+																	<li>Feedback system design</li>
+																	<li>Electronics and Devices</li>
+																	<li>Power Engineering</li>
+																	<li>Introduction to Digital Signal Processing</li>
+																	<li>Semiconductor Electronics</li>
+																	<li>Finance & Law for Engineers</li>
+																	<li>Individual Design Project</li>
+																	<ul><li>Investigation of AlAsSb APDs</li></ul>
+																</ul>
+																
+																<li><u>Extracurricular:</u></li>
+																<ul>
+																	<li>Awarded the “Most Viable Business Proposition” on the proposal with sections that I have written in the Unmanned Aircraft Systems(UAS) Challenge - (2016). – accredited by IMechE.</li>
+																	<li>Winner team of the ‘’Start-up weekend’’ event in Sheffield. - (2016)</li>
+																	<li>Co-founded the Macau Society of the University of Sheffield - (2017)</li>
+																	<li>A co-founder and secretary of the Sheffield Artificial Intelligence Society. - (2016-2018)</li>
+																	<ul>Organised weekly seminar and meeting, regular NAO robot session and publicity of the society activities.</ul>
+																	<li>Event Coordinator and Executive Secretary of Entrepreneurs Society. - (2016-2017)</li>
+																	<ul>Organized seminar talks on business management, start-up stories and social events.</ul>
+																</ul>
+																
+																<li>For further information: <a href="https://www.sheffield.ac.uk/prospectus/courseDetails.do?id=H6282019" target="blank">Course Outline</a></li>
+															</ul>
+													</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingThree">
+													<h4 class="panel-title">
+														<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">MSc Artificial Intelligence
+														</a>
+													</h4>
+												</div>
+												<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+													<div class="panel-body">
+														<p><strong>The University of Edinburgh</strong> - <i>2018-2019</i></p>
+															<ul>
+																<li><u>Enrolled modules : </u></li>
+																<ul>
+																	<b>Semester 1:</b>
+																	<li>Informatic Research Review</li>
+																	<li>Accelerated Natural Language Processing</li>
+																	<li>Machine Learning & Pattern Recognition</li>
+																</ul>
+																<ul>
+																	<b>Semester 2:</b>
+																	<li>Informatics Project Proposal</li>
+																	<li>Reinforcement Learning</li>
+																	<li>Data Mining and Exploration</li>
+																	<li>Natural Language Understanding, Generation and Machine Translation</li>
+																	
+																</ul>
+																<ul>
+																	<b>Full Year:</b>
+																	<li>Machine Learning Practical</li>
+																</ul>
+																<ul>
+																	<b>Summer:</b>
+																	<li>MSc Dissertation</li>
+																</ul>
+	
+																<li><u>Extracurricular:</u></li>
+																<ul>
+																	<li>Active member of Edintelligence - UoE machine learning society</li>
+																	<li>Active member of Edinburgh CompSoc</li>
+																	<li>Attendence of AIBE Summit – Artificial Intelligence in Business & Ethics</li>
+																	<ul> - The world’s largest non-profit AI summit, for details: <a href="https://aibesummit.com/" target="blank"> AIBE Summit Official Website</a></ul>
+																</ul>
+															
+																<li>For further information: <a href="https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&id=107" target="blank">Course Outline</a></li>
+																	
+															</ul>
+													</div>
+												</div>
+											</div>
+	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+		
+					<section class="colorlib-experience" data-section="experience">
+						<div class="colorlib-narrow-content">
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+									<span class="heading-meta">Experience</span>
+									<h2 class="colorlib-heading animate-box">Academic Experience</h2>
+								</div>
+							</div>
 							<div class="row">
 								<div class="col-md-12">
-									<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-										<div class="col-md-12">
-											<div class="about-desc">
-												<span class="heading-meta">Favourite quote: <br /> <i>"I propose to consider the question, 'Can machines think?" - Alan Turing </i></span>
-												<h1 class="colorlib-heading">Welcome to my personal page!</h1>
-												<p><strong>Hi, I'm Haydn</strong>  <br /> A driven, curious and organized Electronic Engineering graduate. Currently pursuing the studies of AI at the University of Edinburgh. I enjoy solving puzzles and am passionate about Artificial Intelligence and how it can help businesses to deliver values with lower resources. I aim to enjoy making a contribution to the field of engineering and to AI research in particular. I am sure this will be an exciting lifelong journey and I hope to be witness to moments of profound beauty, even if a global optimum is not achieved in my lifetime.</p>
-											    	<p><a href="Downloads/CV_HaydnC.pdf" download target="blank"> Download CV <i class="icon-download4"></i></a></p>
-											</div>
-										</div>
-									</div>
-		
-								</div>
-							</div>
-						</div>
-				</section>
+								 <div class="timeline-centered">
 	
-				<section id="colorlib-hero" class="js-fullheight" data-section="photos">
-					<div class="flexslider js-fullheight">
-						<ul class="slides">
-							<li style="background-image: url(images/img_bg_4.jpg);" >
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li style="background-image: url(images/img_bg_26.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li style="background-image: url(images/img_bg_25.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner js-fullheight">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li style="background-image: url(images/img_bg_9.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid"	>
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-
-							<li style="background-image: url(images/img_bg_29.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li> 
-							
-							<li style="background-image: url(images/img_bg_30.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-
-							<li style="background-image: url(images/img_bg_31.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li> 
-
-							<li style="background-image: url(images/img_bg_5.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li style="background-image: url(images/img_bg_8.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li> 
-							<li style="background-image: url(images/img_bg_6.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li style="background-image: url(images/img_bg_22.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li style="background-image: url(images/img_bg_27.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li style="background-image: url(images/img_bg_23.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li style="background-image: url(images/img_bg_24.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li style="background-image: url(images/img_bg_20.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li style="background-image: url(images/img_bg_2.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-
-
-							</ul>
-						</div>
-				</section>
-	
-	
-				
-				<section class="colorlib-services" data-section="motivation">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Motivation</span>
-								<h2 class="colorlib-heading">What wakes me up every morning?</h2>
-							</div>
-						</div>
-						<div class="row row-pt-md">
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-1">
-									<span class="icon">
-										<i class="icon-bulb"></i>
-									</span>
-									<div class="desc">
-										<h3>Innovative Ideas</h3>
-										<p>With open source, development platform and online courses. The abundance of information incubate ideas that can potentially impact lives of millions!</p>
-									<!--https://www.google.com/search?q=development+platform&oq=development+platform&aqs=chrome..69i57j69i65l2j0l3.3222j0j7&sourceid=chrome&ie=UTF-8-->
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-3">
-									<span class="icon">
-										<i class="icon-phone3"></i>
-									</span>
-									<div class="desc">
-										<h3>Ubiquitous of Electronics</h3>
-										<p>The distribution of electronic devices has infused into our everyday life, rescue us from drudgery and redefined what can be done during our lifetime!</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-2">
-									<span class="icon">
-										<i class="icon-data"></i>
-									</span>
-									<div class="desc">
-										<h3>Moore's Law 2.0</h3>
-										<!--
-										<p>Moore's Law predicted the number of transistors on IC boards doubles every 18 months. While the state-of-the-art 7nm has overtaken the 10nm chips, the World's No.2 chipmaker GlobalFoundries has halted the 7nm production based on economic factors. </p>
-										https://press.trendforce.com/press/20180524-3106.html
-										<p>Since the Moore's Law is converging, the explosive growth of data available is the new Moore's Law! In 2017 alone, > 300 hr of video uploaded on Youtube per min, and > 100M images posted on Instagram every day! </p>
-										<p>If Moore's Law has enable faster computation, Moore's Law 2.0 yields smarter devices!</p>
-									-->
-										<!--https://press.trendforce.com/press/20180524-3106.html-->
-										<p>Explosive growth of data and halt of Moore's Law bring forth the Moore's Law 2.0!
-										If Moore's Law has enable faster computation, Moore's Law 2.0 yields smarter devices!</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-4">
-									<span class="icon">
-										<i class="icon-layers2"></i>
-									</span>
-									<div class="desc">
-										<h3>Personalization of Products</h3>
-										<p>AI can characterise user behavior, preference and needs at a level beyond most people can imagine. This yields Personalization user experience and products. With this dynamic setting, 1-to-1 touchpoints, there's no need for "One size fits all"!</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-5">
-									<span class="icon">
-										<i class="icon-data"></i>
-									</span>
-									<div class="desc">
-										<h3>Commercialization of AI</h3>
-										<p>After the A.I. winter in the 80s' and 90s', now it's time to shine with: (1)Moore's Law (2)Moore's Law 2.0 (3)The Cloud. Focusing on R&D in narrow-AI has proven success in enhancing value to user experience, saving cost and lowering risks. Resulted in A.I. companies leading the world.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-6">
-									<span class="icon">
-										<i class="icon-phone3"></i>
-									</span>
-									<div class="desc">
-										<h3>Digitalization of Daily Life</h3>
-										<p>With the support of Fiber-optic communication and the imminent 5G technology, IoT and others will further digitalize our daily life so that we can have more time, health and energy to focus on what matters for us!</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				
-				<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
-					<div class="overlay"></div>
-					<div class="colorlib-narrow-content">
-						<div class="row">
-						</div>
-						<div class="row">
-							<div class="col-md-3 text-center animate-box">
-								<span class="colorlib-counter js-counter" data-from="0" data-to="8" data-speed="5000" data-refresh-interval="50"></span>
-								<span class="colorlib-counter-label">Projects</span>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-	
-				<section class="colorlib-skills" data-section="skills">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">My Specialty</span>
-								<h2 class="colorlib-heading animate-box">My Skills</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<p>Professional Skills</p>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Python & C</h3>
-									<div class="progress">
-										 <div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
-										  aria-valuemin="0" aria-valuemax="100" style="width:85%">
-										<span>85%</span>
-										  </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Java</h3>
-									<div class="progress">
-										 <div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
-										  aria-valuemin="0" aria-valuemax="100" style="width:80%">
-										<span>80%</span>
-										  </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Neural Network</h3>
-									<div class="progress">
-										 <div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
-										  aria-valuemin="0" aria-valuemax="100" style="width:75%">
-										<span>75%</span>
-										  </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Reinforcement learning</h3>
-									<div class="progress">
-										 <div class="progress-bar color-4" role="progressbar" aria-valuenow="70"
-										  aria-valuemin="0" aria-valuemax="100" style="width:70%">
-										<span>70%</span>
-										  </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Natural Language Processing</h3>
-									<div class="progress">
-										 <div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-										  aria-valuemin="0" aria-valuemax="100" style="width:70%">
-										<span>70%</span>
-										  </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Data handling</h3>
-									<div class="progress">
-										 <div class="progress-bar color-6" role="progressbar" aria-valuenow="75"
-										  aria-valuemin="0" aria-valuemax="100" style="width:75%">
-										<span>75%</span>
-										  </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>MATLAB, LabVIEW, FPGA</h3>
-									<div class="progress">
-										 <div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
-										  aria-valuemin="0" aria-valuemax="100" style="width:85%">
-										<span>85%</span>
-										  </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Probability and statistic</h3>
-									<div class="progress">
-										 <div class="progress-bar color-2" role="progressbar" aria-valuenow="75"
-										  aria-valuemin="0" aria-valuemax="100" style="width:75%">
-										<span>75%</span>
-										  </div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<p>Personal Skills</p>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Team player</h3>
-									<div class="progress">
-										 <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-										  aria-valuemin="0" aria-valuemax="100" style="width:90%">
-										<span>90%</span>
-										  </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Problem solving</h3>
-									<div class="progress">
-										 <div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-										  aria-valuemin="0" aria-valuemax="100" style="width:85%">
-										<span>85%</span>
-										  </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Time management</h3>
-									<div class="progress">
-										 <div class="progress-bar color-3" role="progressbar" aria-valuenow="80"
-										  aria-valuemin="0" aria-valuemax="100" style="width:80%">
-										<span>80%</span>
-										  </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Communication</h3>
-									<div class="progress">
-										 <div class="progress-bar color-4" role="progressbar" aria-valuenow="85"
-										  aria-valuemin="0" aria-valuemax="100" style="width:85%">
-										<span>85%</span>
-										  </div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-	
-				<section class="colorlib-education" data-section="education">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Education</span>
-								<h2 class="colorlib-heading animate-box">Education</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="fancy-collapse-panel">
-									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingTwo">
-												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">BENG (HONOURS) Electrical and Electronic Engineering
-													</a>
-												</h4>
-											</div>
-											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-												<div class="panel-body">
-													<p><strong>The University of Sheffield</strong> - <i>2015-2018 (Achieved 1st Class Honours)</i></p> 
-														<ul>
-															<li><u>Enrolled modules:</u></li>
-															<ul>
-																<b>1st Year:</b>
-																<li>Mathematics(Electrical)</li>
-																<li>Introduction to Energy</li>
-																<li>Programming - C & Matlab</li>
-																<li>System Design Analysis</li>
-																<li>Electronic Devices and Circuits</li>
-																<li>Global Engineering Challenge Week</li>
-															</ul>
-															<ul>
-																<b>2nd Year:</b>
-																<li>Mathematics 2(Electrical)</li>
-																<li>Electrical Energy & Conversion</li>
-																<li>Analogue & Digital Electronics</li>
-																<li>Communication Electronics</li>
-																<li>Engineering Software Design</li>
-																<ul><li>Designed a simple vending machine and implemented on a NXP FRDM KL25Z Board</li></ul>
-																<li>Design Project </li>
-																<ul><li>Using a Nexys4 DDR Atrix-7 FPGA Board for fundamental arithmetic</li></ul>
-																<li>Industrial Project</li>
-																<li>Project Management & Human Resource Management for Engineers</li>
-																<li>Engineering - You're Hired</li>
-															</ul>
-															<ul>
-																<b>3rd Year:</b>
-																<li>Mathematics 3(Electrical)</li>
-																<li>Feedback system design</li>
-																<li>Electronics and Devices</li>
-																<li>Power Engineering</li>
-																<li>Introduction to Digital Signal Processing</li>
-																<li>Semiconductor Electronics</li>
-																<li>Finance & Law for Engineers</li>
-																<li>Individual Design Project</li>
-																<ul><li>Investigation of AlAsSb APDs</li></ul>
-															</ul>
-															
-															<li><u>Extracurricular:</u></li>
-															<ul>
-																<li>Awarded the “Most Viable Business Proposition” on the proposal with sections that I have written in the Unmanned Aircraft Systems(UAS) Challenge - (2016). – accredited by IMechE.</li>
-																<li>Winner team of the ‘’Start-up weekend’’ event in Sheffield. - (2016)</li>
-																<li>A co-founder and secretary of the Sheffield Artificial Intelligence Society. - (2016-2018)</li>
-																<ul>Organised weekly seminar and meeting, regular NAO robot session, publicity of the society activities, invited company such as pwc for a guest event.</ul>
-																<li>Event Coordinator and Executive Secretary of Entrepreneurs Society. - (2016-2017)</li>
-																<ul>Organized seminar talks on business management, start-up stories and social events.</ul>
-															</ul>
-															
-															<li>For further information: <a href="https://www.sheffield.ac.uk/prospectus/courseDetails.do?id=H6282019" target="blank">Course Outline</a></li>
-														</ul>
-												</div>
-											</div>
-										</div>
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingThree">
-												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">MSc Artificial Intelligence
-													</a>
-												</h4>
-											</div>
-											<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-												<div class="panel-body">
-													<p><strong>The University of Edinburgh</strong> - <i>2018-2019</i></p>
-														<ul>
-															<li><u>Enrolled modules : </u></li>
-															<ul>
-																<b>Semester 1:</b>
-																<li>Informatic Research Review</li>
-																<li>Accelerated Natural Language Processing</li>
-																<li>Machine Learning & Pattern Recognition</li>
-															</ul>
-															<ul>
-																<b>Semester 2:</b>
-																<li>Informatics Project Proposal</li>
-																<li>Reinforcement Learning</li>
-																<li>Data Mining and Exploration</li>
-																<li>Natural Language Understanding, Generation and Machine Translation</li>
-																
-															</ul>
-															<ul>
-																<b>Full Year:</b>
-																<li>Machine Learning Practical</li>
-															</ul>
-															<ul>
-																<b>Summer:</b>
-																<li>MSc Dissertation</li>
-															</ul>
-
-															<li><u>Extracurricular:</u></li>
-															<ul>
-																<li>Active member of Edintelligence - UoE machine learning society</li>
-																<li>Active member of Edinburgh CompSoc</li>
-																<li>Attendence of AIBE Summit – Artificial Intelligence in Business & Ethics</li>
-																<ul> - The world’s largest non-profit AI summit, for details: <a href="https://aibesummit.com/" target="blank"> AIBE Summit Official Website</a></ul>
-															</ul>
-														
-															<li>For further information: <a href="https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&id=107" target="blank">Course Outline</a></li>
-																
-														</ul>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-	
-				<section class="colorlib-experience" data-section="experience">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Experience</span>
-								<h2 class="colorlib-heading animate-box">Academic Experience</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-							 <div class="timeline-centered">
-
-								<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-									<div class="timeline-entry-inner">
-										<div class="timeline-icon color-4">
-											<i class="icon-pen2"></i>
-										</div>
-											<div class="timeline-label">
-											<h2><a href="#">A deep learning model for stock price prediction</a> <span>Feb 2019 ->(Expect: Apr 2019) [Ongoing] </span></h2>
-											<h5>The University of Edinburgh - MSc year</h5>
-											<p>Still in literature review phase</p>
-										</div>
-									</div>
-								</article>
-
-								<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+									<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
 										<div class="timeline-entry-inner">
 											<div class="timeline-icon color-4">
 												<i class="icon-pen2"></i>
 											</div>
 												<div class="timeline-label">
-												<h2><a href="#">Exploring convolutional neural network (CNN) architecture</a> <span>Nov 2018 ->(Expect: Apr 2019) [Ongoing] </span></h2>
+												<h2><a href="#">A deep learning model for stock price prediction</a> <span>Feb 2019 ->(Expect: Apr 2019) [Ongoing] </span></h2>
 												<h5>The University of Edinburgh - MSc year</h5>
-												<p>This work focus on the implementation of CNNs and pooling with the provided MLP framework to understand the structure of CNNs. In this paper, different dimension reduction methods are tested, which are then combined and explore the effects on accuracies and speed. Comparative experi- mental results demonstrate that average pooling method is superior to the max pooling, striding and dilation in terms of accuracy.</p>
+												<p>Still in literature review phase</p>
 											</div>
 										</div>
 									</article>
-
-								 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-									<div class="timeline-entry-inner">
-									   <div class="timeline-icon color-1">
-										  <i class="icon-pen2"></i>
-									   </div>
-									   <div class="timeline-label">
-										  <h2><a href="#">Investigation of AlAsSb photodetectors in communication system</a> <span> Oct 2017 -> May 2018</span></h2>
-										  <h5>The University of Sheffield - 3rd year</h5>										  
-										  <p>Supervisor: Prof. John David</p>
-										  <p>Advisor: Prof. Shankar Madathil</p>
-									   </div>
-									</div>
-								</article>
 	
-								 <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-									<div class="timeline-entry-inner">
-									   <div class="timeline-icon color-4">
-										  <i class="icon-pen2"></i>
-									   </div>
-									   <div class="timeline-label">
-										   <h2><a href="#">Sheffield Industrial Project scheme(SHIPS) project</a> <span>Oct -> Dec 2017</span></h2>
-										   <h5>The University of Sheffield - 2nd year</h5>
-										  <p>-	As a team leader of the SHIPs project to provide solutions to a problem received from the Advanced Manufacturing Research Centre (AMRC). SHIPs is an exclusive credited project in engineering department of the University of Sheffield and the AMRC is a University-supported research centre partners with more than a hundred companies including Airbus and Boeings. Successfully delivered solutions to the AMRC representatives to real-time monitor the temperature and pressure of a composite material prototype in Hot-press machine that AMRC currently use.											</p>
-									   </div>
-									</div>
-								 </article>
+									<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+											<div class="timeline-entry-inner">
+												<div class="timeline-icon color-4">
+													<i class="icon-pen2"></i>
+												</div>
+													<div class="timeline-label">
+													<h2><a href="#">Exploring convolutional neural network (CNN) architecture</a> <span>Nov 2018 ->(Expect: Apr 2019) [Ongoing] </span></h2>
+													<h5>The University of Edinburgh - MSc year</h5>
+													<p>This work focus on the implementation of CNNs and pooling with the provided MLP framework to understand the structure of CNNs. In this paper, different dimension reduction methods are tested, which are then combined and explore the effects on accuracies and speed. Comparative experi- mental results demonstrate that average pooling method is superior to the max pooling, striding and dilation in terms of accuracy.</p>
+												</div>
+											</div>
+										</article>
 	
-								 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-									<div class="timeline-entry-inner">
-									   <div class="timeline-icon color-5">
-										  <i class="icon-pen2"></i>
-									   </div>
-									   <div class="timeline-label">
-										<h2><a href="#">Engineering You’re Hired(EYH)</a> <span>Jan 2017</span></h2>
-										   <h5>The University of Sheffield - 2nd year</h5>
-										  <p>-	Worked as a group with students from other engineering departments and computer science department to design a ski helmet with augmented reality(AR) goggle. This is a five days’ project begins from nine until five each day. We designed the goggle from scratch, up to patent and marketing plan, ends with a ten minutes funding pitch and Q&A session.												.</p>
-									   </div>
-									</div>
-								 </article>
-
-								 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+									 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 										<div class="timeline-entry-inner">
-										   <div class="timeline-icon color-3">
+										   <div class="timeline-icon color-1">
 											  <i class="icon-pen2"></i>
 										   </div>
 										   <div class="timeline-label">
-											   <h2><a href="#">FYGER competition</a> <span>Dec 2016</span></h2>
-											   <h5>The University of Sheffield - 2nd year</h5>										   
-											  <p>-	A competition required students to work as groups to design and build remote toy cars with ability to capture a ping-pong ball quickly. Successfully build the car and entered the second round of the competition.											</p>
+											  <h2><a href="#">Investigation of AlAsSb photodetectors in communication system</a> <span> Oct 2017 -> May 2018</span></h2>
+											  <h5>The University of Sheffield - 3rd year</h5>										  
+											  <p>Supervisor: Prof. John David</p>
+											  <p>Advisor: Prof. Shankar Madathil</p>
+										   </div>
+										</div>
+									</article>
+		
+									 <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+										<div class="timeline-entry-inner">
+										   <div class="timeline-icon color-4">
+											  <i class="icon-pen2"></i>
+										   </div>
+										   <div class="timeline-label">
+											   <h2><a href="#">Sheffield Industrial Project scheme(SHIPS) project</a> <span>Oct -> Dec 2017</span></h2>
+											   <h5>The University of Sheffield - 2nd year</h5>
+											  <p>-	As a team leader of the SHIPs project to provide solutions to a problem received from the Advanced Manufacturing Research Centre (AMRC). SHIPs is an exclusive credited project in engineering department of the University of Sheffield and the AMRC is a University-supported research centre partners with more than a hundred companies including Airbus and Boeings. Successfully delivered solutions to the AMRC representatives to real-time monitor the temperature and pressure of a composite material prototype in Hot-press machine that AMRC currently use.											</p>
+										   </div>
+										</div>
+									 </article>
+		
+									 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+										<div class="timeline-entry-inner">
+										   <div class="timeline-icon color-5">
+											  <i class="icon-pen2"></i>
+										   </div>
+										   <div class="timeline-label">
+											<h2><a href="#">Engineering You’re Hired(EYH)</a> <span>Jan 2017</span></h2>
+											   <h5>The University of Sheffield - 2nd year</h5>
+											  <p>-	Worked as a group with students from other engineering departments and computer science department to design a ski helmet with augmented reality(AR) goggle. This is a five days’ project begins from nine until five each day. We designed the goggle from scratch, up to patent and marketing plan, ends with a ten minutes funding pitch and Q&A session.												.</p>
 										   </div>
 										</div>
 									 </article>
 	
-								 <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-									<div class="timeline-entry-inner">
-									   <div class="timeline-icon color-none">
-									   </div>
-									</div>
-								 </article>
-							  </div>
+									 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+											<div class="timeline-entry-inner">
+											   <div class="timeline-icon color-3">
+												  <i class="icon-pen2"></i>
+											   </div>
+											   <div class="timeline-label">
+												   <h2><a href="#">FYGER competition</a> <span>Dec 2016</span></h2>
+												   <h5>The University of Sheffield - 2nd year</h5>										   
+												  <p>-	A competition required students to work as groups to design and build remote toy cars with ability to capture a ping-pong ball quickly. Successfully build the car and entered the second round of the competition.											</p>
+											   </div>
+											</div>
+										 </article>
+		
+									 <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+										<div class="timeline-entry-inner">
+										   <div class="timeline-icon color-none">
+										   </div>
+										</div>
+									 </article>
+								  </div>
+							   </div>
 						   </div>
-					   </div>
-					</div>
-				</section>
-	
-				<section class="colorlib-work" data-section="work">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">My Work</span>
-								<h2 class="colorlib-heading animate-box">Recent Work</h2>
+						</div>
+					</section>
+		
+					<section class="colorlib-work" data-section="work">
+						<div class="colorlib-narrow-content">
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+									<span class="heading-meta">My Work</span>
+									<h2 class="colorlib-heading animate-box">Recent Work</h2>
+								</div>
+							</div>
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<p class="work-menu"><span><a href="#" class="active"></a href ="#"></span> A.I. Soccer <span><a href="#">Data analysis on CT scans</a></span> <span><a href="#">Sentiment Analysis on Twitter</a></span> <span><a href="#"></a>Convlutional Neural Network (CNN)</span></a href ="#"></span> N_gram word generator<span></span></p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+									<div class="project" style="background-image: url(images/img-1.jpg);">
+										<div class="desc">
+											<div class="con">
+												<h3><a href="work.html">4-gram and 5-gram models</a></h3>
+												<span>Demo</span>
+												<p class="icon">
+													<span><a href="#"><i class="icon-share3"></i></a></span>
+													<span><a href="#"><i class="icon-eye"></i> 99</a></span>
+													<span><a href="#"><i class="icon-heart"></i> 23</a></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+									<div class="project" style="background-image: url(images/img-2.jpg);">
+										<div class="desc">
+											<div class="con">
+												<h3><a href="work.html">Sentiment analysis tool</a></h3>
+												<span>Result comparison</span>
+												<p class="icon">
+													<span><a href="#"><i class="icon-share3"></i></a></span>
+													<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+													<span><a href="#"><i class="icon-heart"></i> 13</a></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+									<div class="project" style="background-image: url(images/img-3.jpg);">
+										<div class="desc">
+											<div class="con">
+												<h3><a href="work.html">CNN</a></h3>
+												<span>fprop and bprop</span>
+												<p class="icon">
+													<span><a href="#"><i class="icon-share3"></i></a></span>
+													<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+													<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+									<div class="project" style="background-image: url(images/img-4.jpg);">
+										<div class="desc">
+											<div class="con">
+												<h3><a href="work.html"> n-gram language model</a></h3>
+												<span>pseudo code</span>
+												<p class="icon">
+													<span><a href="#"><i class="icon-share3"></i></a></span>
+													<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+													<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="row">
+								<div class="col-md-12 animate-box">
+									<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+								</div>
 							</div>
 						</div>
-						<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-							<div class="col-md-12">
-								<p class="work-menu"><span><a href="#" class="active"></a href ="#"></span> A.I. Soccer <span><a href="#">Data analysis on CT scans</a></span> <span><a href="#">Sentiment Analysis on Twitter</a></span> <span><a href="#"></a>Convlutional Neural Network (CNN)</span></a href ="#"></span> N_gram word generator<span></span></p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="project" style="background-image: url(images/img-1.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="work.html">4-gram and 5-gram models</a></h3>
-											<span>Demo</span>
-											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 99</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 23</a></span>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="project" style="background-image: url(images/img-2.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="work.html">Sentiment analysis tool</a></h3>
-											<span>Result comparison</span>
-											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 13</a></span>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-								<div class="project" style="background-image: url(images/img-3.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="work.html">CNN</a></h3>
-											<span>fprop and bprop</span>
-											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-								<div class="project" style="background-image: url(images/img-4.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="work.html"> n-gram language model</a></h3>
-											<span>pseudo code</span>
-											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-											</p>
-										</div>
-									</div>
+					</section>
+		
+					<section class="colorlib-blog" data-section="blog">
+						<div class="colorlib-narrow-content">
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+									<span class="heading-meta">Read</span>
+									<h2 class="colorlib-heading">Recent Blog</h2>
 								</div>
 							</div>
 							
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box">
-								<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+							<div class="row">
+								<div class="col-md-12 animate-box">
+								<!--	<h3>In progress</h3> -->
+									<p><a href="#" class="btn btn-primary btn-lg btn-load-more">In progress <i class="icon-reload"></i></a></p> 
+								</div>
 							</div>
 						</div>
-					</div>
-				</section>
-	
-				<section class="colorlib-blog" data-section="blog">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Read</span>
-								<h2 class="colorlib-heading">Recent Blog</h2>
+					</section>
+		
+					<section class="colorlib-contact" data-section="contact">
+						<div class="colorlib-narrow-content">
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+									<span class="heading-meta">Get in Touch?</span>
+									<h2 class="colorlib-heading">Contact</h2>
+								</div>
 							</div>
-						</div>
-						
-						<div class="row">
-							<div class="col-md-12 animate-box">
-							<!--	<h3>In progress</h3> -->
-								<p><a href="#" class="btn btn-primary btn-lg btn-load-more">In progress <i class="icon-reload"></i></a></p> 
-							</div>
-						</div>
-					</div>
-				</section>
-	
-				<section class="colorlib-contact" data-section="contact">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Get in Touch?</span>
-								<h2 class="colorlib-heading">Contact</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-5">
-								<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<i class="icon-globe-outline"></i>
+							<div class="row">
+								<div class="col-md-5">
+									<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+										<div class="colorlib-icon">
+											<i class="icon-globe-outline"></i>
+										</div>
+										<div class="colorlib-text">
+											<p><a href="mailto:haydncheong@gmail.com">haydncheong@gmail.com</a></p>
+											<p><a href="mailto:s1878104@ed.ac.uk">s1878104@ed.ac.uk</a></p>
+										</div>
 									</div>
-									<div class="colorlib-text">
-										<p><a href="mailto:haydncheong@gmail.com">haydncheong@gmail.com</a></p>
-										<p><a href="mailto:s1878104@ed.ac.uk">s1878104@ed.ac.uk</a></p>
+		
+		
+									<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+										<div class="colorlib-icon">
+											<i class="icon-phone"></i>
+										</div>
+										<div class="colorlib-text">
+											<p><a href="tel://+447456181681">+44 7456 181 681</a></p>
+										</div>
 									</div>
 								</div>
 	
-	
-								<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<i class="icon-phone"></i>
+								<!--<div class="col-md-7 col-md-push-1">
+									<div class="row">
+										<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
+											<form action="javascript:alert( 'success!' );">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Name">
+												</div>
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Email">
+												</div>
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Subject">
+												</div>
+												<div class="form-group">
+													<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+												</div>
+												<div class="form-group">
+													<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
+												</div>
+											</form>
+										</div>
+										
 									</div>
-									<div class="colorlib-text">
-										<p><a href="tel://+447456181681">+44 7456 181 681</a></p>
-									</div>
-								</div>
+								</div> -->
 							</div>
-
-							<!--<div class="col-md-7 col-md-push-1">
-								<div class="row">
-									<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-										<form action="javascript:alert( 'success!' );">
-											<div class="form-group">
-												<input type="text" class="form-control" placeholder="Name">
-											</div>
-											<div class="form-group">
-												<input type="text" class="form-control" placeholder="Email">
-											</div>
-											<div class="form-group">
-												<input type="text" class="form-control" placeholder="Subject">
-											</div>
-											<div class="form-group">
-												<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-											</div>
-											<div class="form-group">
-												<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
-											</div>
-										</form>
-									</div>
-									
-								</div>
-							</div> -->
 						</div>
+					</section>
+					<div class="colorlib-footer">
+						<ul>
+							<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright <script>document.write(new Date().getFullYear());</script> 
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> <span>Made with Colorlib using Jackson</span>
+							</small></p>
+						</ul>
 					</div>
-				</section>
-				<div class="colorlib-footer">
-					<center>
-					<ul>
-						<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright <script>document.write(new Date().getFullYear());</script> 
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> <span>Made with Colorlib using Jackson</span>
-						</small></p>
-					</ul>
-					</center>
-				</div>
-			</div><!-- end:colorlib-main -->
-		</div><!-- end:container-wrap -->
-		</div><!-- end:colorlib-page -->
+				</div><!-- end:colorlib-main -->
+			</div><!-- end:container-wrap -->
+			</div>
 	
 		<!-- jQuery -->
 		<script src="js/jquery.min.js"></script>
@@ -1011,7 +1059,15 @@
 		
 		<!-- MAIN JS -->
 		<script src="js/main.js"></script>
-	
+		
+    <!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+    <!-- JQVMap -->
+    <script src="jqvmap/dist/jquery.vmap.js"></script>
+    <script src="jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- Custom Theme Scripts -->
+	<script src="build/custom.min.js"></script>
 		</body>
 	</html>
 	
