@@ -474,7 +474,7 @@
 							</div>
 							<div class="row">
 								<div class="col-md-3 text-center animate-box">
-									<span class="colorlib-counter js-counter" data-from="0" data-to="8" data-speed="5000" data-refresh-interval="50"></span>
+									<span class="colorlib-counter js-counter" data-from="0" data-to="18" data-speed="5000" data-refresh-interval="50"></span>
 									<span class="colorlib-counter-label">Projects</span>
 								</div>
 								
@@ -778,7 +778,19 @@
 							<div class="row">
 								<div class="col-md-12">
 								 <div class="timeline-centered">
-
+										<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+												<div class="timeline-entry-inner">
+													<div class="timeline-icon color-3">
+														<i class="icon-pen2"></i>
+													</div>
+														<div class="timeline-label">
+														<h2><a href="#">Introductory AI course for A-level students on Udemy</a> <span><br> 26th Aug 2019 - Present</span></h2>
+														<h5>Side Project: Teach the fundamentals, applications and history of AI.</h5>
+														<p>Producers and teachers: Ruberta Bisson and Chon In (Haydn) Cheong</p>
+														<p>In the production phase of the project, expecting to release the course by Nov 2019. Can't wait to help students to get a taste of AI!</p>
+													</div>
+												</div>
+											</article>
 									<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
 										<div class="timeline-entry-inner">
 											<div class="timeline-icon color-4">
@@ -786,8 +798,9 @@
 											</div>
 												<div class="timeline-label">
 												<h2><a href="#">Application of Prospect Theory and Regret Theory on the Development of a
-														Consensus Support System</a> <span>3rd June - 16th Aug 2019</span></h2>
+														Consensus Support System</a> <span><br>3rd June - 16th Aug 2019</span></h2>
 												<h5>The University of Edinburgh - MSc AI: Dissertation</h5>
+												<p>Supervisor: Prof. Stuart Anderson(Deputy Head of Informatics Department)</p>
 												<p>A WeChat Mini-Program has been developed to collect, visualise and calculate the
 														preferences and opinions of a group of decision makers and support consensus.</p>
 												<p>UML, MVC design pattern, functional testing and GUI testing, JavaScript, WXML, WXSS
@@ -802,9 +815,24 @@
 													<i class="icon-pen2"></i>
 												</div>
 													<div class="timeline-label">
+													<h2><a href="#">Rap lyrics generator using bi-directional LSTMs</a> <span><br> 10th June 2019 - Present</span></h2>
+													<h5>Side Project: NLP, Natural Language Generation</h5>
+													<p>Researchers: Kleber noel and Chon In (Haydn) Cheong</p>
+													<p>Web crawling and scarping were used to extract 1 Million lines of lyrics from
+													LyricsMaster and LyricsGenius. With aggregation following standardization. Data cleaning was done by using cross-entropy, word frequency and RegEx, etc. Data is then feed into a Seq2Seq model to learn. BERT can potentially be used for future work.</p>
+												</div>
+											</div>
+										</article>
+									<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+											<div class="timeline-entry-inner">
+												<div class="timeline-icon color-3">
+													<i class="icon-pen2"></i>
+												</div>
+													<div class="timeline-label">
 													<h2><a href="#"></a>Mini-Project: Data mining for internet advertisements classification<span></span>15th Feb - 5th Apr 2019</h2>
 													<h5>The University of Edinburgh - MSc AI: Data Mining and Exploration</h5>
 													<p>Authors: Cecilia Cobos Santes, Chon In (Haydn) Cheong, Hong Tin Chan, Ivaylo Genev</p>	
+													<p>Supervisor: Dr.Arno Onken</p>
 													<p>Motivation: In the ever-growing internet advertising system, it is considerably beneficial foradvertisers to promote image-based advertisements.  However, such images canincrease a page’s load time, negatively affecting users’ browsing experience. Therefore,  the desire arises to remove advertising images. </p>
 													<p>A number of different ways for exploratory data analyses (EDA) were presented, intended to inform data pre-processing steps and modelling. As a result of highly-imbalanced classes and somemissing data, methods such as SMOTE and multiple imputation are employed to ensure reliable classification. Moreover, three classification-based models foradvertising detection are proposed. It is found that with the combination of randomforest for missing data imputation, LDA for dimensionality reduction, SMOTEfor imbalanced dataset, and multi-layer perception (MLP) classifier, over 99%balanced accuracy can be obtained!</p>
 												</div>
@@ -831,7 +859,8 @@
 														<div class="timeline-label">
 														<h2><a href="#">Neural Machine Translation using LSTMs and Lexical Models</a> <span>Feb - Mar 2019 </span></h2>
 														<h5>The University of Edinburgh - MSc AI: Natural Language Understanding, Generation and Machine Translation</h5>
-														<p> A seq2seq model with bi-directional LSTMs was used as the baseline. Data-preprocessing was done by refering to correlation coefficient between source and target lagnauges (English and Japanese in this case). Data visualisation was used to inspect the distribution of the sentence lengths to spot outliers and compare their lexical variety(type-to-token ratio) and mark rare words with UNK symbol.  </p>
+														<p>Advisor: Dr Adam Lopez</p>
+														<p>A seq2seq model with bi-directional LSTMs was used as the baseline. Data-preprocessing was done by refering to correlation coefficient between source and target lagnauges (English and Japanese in this case). Data visualisation was used to inspect the distribution of the sentence lengths to spot outliers and compare their lexical variety(type-to-token ratio) and mark rare words with UNK symbol.  </p>
 														<p>An extended models with enhanced decoding layers were implemented, by replacing greedy decoding with beam search with brevity penalty to address short sentence problem. An architecture with more layers was also implemented with an aim to boost performence. Effects on model quality were examined based on training loss, validation loss, perplexity and BLEU scores. Attention mechanism was then augmented to improve alignments learned by the model. Qualitative and quatitative appraoch were used in the evaluation section.</p>
 													</div>
 												</div>
@@ -844,6 +873,7 @@
 															<div class="timeline-label">
 															<h2><a href="#">NLP: Recurrent Neural Networks</a> <span>Jan - Feb 2019</span></h2>
 															<h5>The University of Edinburgh - MSc AI: Natural Language Understanding, Generation and Machine Translation</h5>
+															<p>Advisor: Dr Adam Lopez</p>
 															<p>After hyperparameter tuning for the recurrent neural network language model(RNNLM) based on cross-entropy, it was used to predict subject-verb agreement over sentences in a corpus. Accuracy of 74.30% and 73.15% were recorded for developent set(1,000 samples) and test set(4,000 samples) respectively.</p>
 															<p>Two hypothesis were then tested: (1)Does the prediction accuracy of subject-verb agreement negatively correlated with the time steps between the subject and verb? (2)By comparing the normalized loss results from Q2 and Q3, which differ in the prediction objective, would a clear effect of different hyperparameter values be shown? A clear trend of significant increased in perplexity and mean loss against time steps was found. This implies the potential of increased performance by cleaning our data before making predictions, by excepting input with a limited value of time steps from head to predictive target. </p>
 															<p>Future work was then stated: If the number time steps between subjects and verb of input sentences has a direct effect on accuracy, what is the limit of time steps in between the subject and verb for our pre-trained model to stay at an accuracy above 50%? This question has been raised since a system with prediction accuracy lower than 50% performs worse than a random guess.</p>
@@ -874,14 +904,28 @@
 														Two Sides of the Same Coin<span></span>8th Feb - 26th Feb 2019</h2>
 													<h5>The University of Edinburgh - MSc AI: Data Mining and Exploration</h5>
 												<p>Poster authors and presenters: Hong Tin Chan and Haydn (Chon In) Cheong</p>
-												<p>Paper authors: Erich Schubert, Michael Weiler and Arthur Zimek</p>													
+												<p>Paper authors: Erich Schubert, Michael Weiler and Arthur Zimek</p>	
+												<p>Marker: Dr.Arno Onken</p>												
 												<p>This poster and presentation aim to critically review a published research paper - "Outlier Detection and Trend Detection: Two sides of the same coin". This study aims to examine the relationship between different outlier/anomaly detection methods.</p>
 												<p>We condense this paper into an A0-size poster and summarised the paper in a 10 minutes presentation, and assessed by a Q&A with our lecturer - Dr.Arno Onken.</p> The presentation was graded as Distinction with positive comments about good preparation for possible questions.</p>
 												<p></p>
 												</div>
 											</div>
 										</article>
-	
+								<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+										<div class="timeline-entry-inner">
+											<div class="timeline-icon color-3">
+												<i class="icon-pen2"></i>
+											</div>
+												<div class="timeline-label">
+												<h2><a href="#">Exploring distributional similarity in Twitter</a> <span><br>5th Nov - 26th Nov 2018</span></h2>
+												<h5>The University of Edinburgh - MSc AI: Accelerated Natural Language Processing</h5>
+												<p>Marker: Prof. Sharon Goldwater</p>
+												<p>Given a dataset from Twitter, a variety of similarity measures, namely Consine, Jaccard, Dice, Euclidean and Manhatten, were implemented and compared to investigate their effectiveness to distributional semantics of words and also sentiment analysis of sentences. After preprocessing such as removal of stopwords, repeated letters and rare words, NLTK library, word2vec were used. The relationships between words, like synonyms, antonyms or hyponyms were also investigated.  </p>
+											<p>The sensitivity of each similarity measures to word frequency, systematic difference between measures, special cases were also considered and analyzed.</p>
+											</div>
+										</div>
+									</article>
 									<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
 											<div class="timeline-entry-inner">
 												<div class="timeline-icon color-3">
@@ -895,6 +939,21 @@
 												</div>
 											</div>
 										</article>
+
+										<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+												<div class="timeline-entry-inner">
+													<div class="timeline-icon color-3">
+														<i class="icon-pen2"></i>
+													</div>
+														<div class="timeline-label">
+														<h2><a href="#">Predicting CT Slice Locations</a> <span><br>24th Oct - 18th Nov 2018</span></h2>
+														<h5>The University of Edinburgh - MSc AI: Machine Learning and Pattern Recognition</h5>
+														<p>Marker and Instructor: Dr Iain Murray</p>
+														<p>A dataset from the UCI machine learning repository was used in this project. Some features have been extracted from slices of CT medical scans. This was a regression tasks of predicting the location of a slice of CT medical scans. After spliting the data into training, validation and test sets, data pre-processing was done by removing constant features and outliers. Linear regression with regularization was set as the baseline of the experiment. PCA was used to decrease the input dimensionality, since the baseline overfit when there are a lot of features. Extra binary features were introduced to make the input data more salience. To simplify the problem, binary classification tasks were invented to fit the data, so that there is no need to think hard about how the values might be distributed and how we should process them. 10 threshoded classification problems were framed for fitting the data. Given a feature vector, we can now obtain 10 different probabilities, by 10 logistic regression models. </p>
+														<p>A small neural network was also used to fit the data. A least square cost function and gradients for this neural network was implemented. Training was done after hyperparameter tuning. Its test accuracy was compared with the baseline and the baseline was extended by deploying basis functions.</p>
+													</div>
+												</div>
+											</article>
 	
 									 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 										<div class="timeline-entry-inner">
