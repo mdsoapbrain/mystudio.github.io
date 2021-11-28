@@ -439,6 +439,10 @@ body.offcanvas {
   letter-spacing: 5px;
   font-weight: 500; }
 
+.about-desc p {
+  font-size: 18px;
+  font-weight: 500; }
+
 .hire {
   padding: 2em;
   background: #f9bf3f; }
@@ -1431,3 +1435,8 @@ body.offcanvas {
 .js .animate-box {
   opacity: 0; }
 
+/* * {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+} */
