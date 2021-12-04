@@ -1441,6 +1441,27 @@ body.offcanvas .colorlib-nav-toggle {
   margin-bottom: 2em;
   display: block;
 }
+.colorlib-counters .colorlib-counter-label-lg {
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  height: 4em;
+  margin-bottom: 2em;
+  display: block;
+}
+.colorlib-counters .colorlib-counter-label-md {
+  font-size: 40px;
+  display: block;
+  color: rgb(0, 0, 0);
+  font-family: "Quicksand", Arial, sans-serif;
+  width: 100%;
+  font-weight: 700;
+  height: 3em;
+  /* font-weight: bold; */
+  margin-bottom: 0.3em;
+}
 .colorlib-counters .colorlib-counter-label-personal-sm {
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
