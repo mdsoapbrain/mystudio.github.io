@@ -584,7 +584,8 @@ body.offcanvas .colorlib-nav-toggle {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: "Quicksand", Arial, sans-serif;
-  background-color: #2c98f0;
+  background-color: #5e993b;
+  /* background-color: #2c98f0; */
   color: #fff;
   position: relative;
   -webkit-box-shadow: none !important;
@@ -620,15 +621,32 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .panel-heading a.collapsed {
-  background: #f2f3f7;
-  border: 1px solid #e6e6e6 !important;
+  /* background: #518334; */
+  /* background: #4fc4fa; */
+  /* border: 1px solid #e6e6e6 !important; */
+  background: #ffffff;
+  border: 1px solid #518334 !important;
+  /* color: #fff2f2; */
   color: #333333;
+  font-size: 14px;
+}
+
+.panel-heading a.collapsed:hover {
+  /* background: #ffffff;
+  border: 1px solid #518334 !important; */
+  background: #518334;
+  /* background: #4fc4fa; */
+  border: 1px solid #e6e6e6 !important;
+  /* border: 1px solid #4fc4fa !important; */
+  /* color: #333333; */
+  color: #fff2f2;
+  font-size: 18px;
 }
 
 .panel-body {
   padding: 1.5em;
   margin-top: 5px;
-  border: 1px solid #e6e6e6 !important;
+  border: 1px solid #202020 !important;
 }
 
 .timeline-centered {
@@ -661,7 +679,7 @@ body.offcanvas .colorlib-nav-toggle {
   position: absolute;
   display: block;
   width: 4px;
-  background: #f2f3f7;
+  background: #f2f7f6;
   top: 20px;
   bottom: 20px;
   margin-left: 29px;
@@ -735,8 +753,8 @@ body.offcanvas .colorlib-nav-toggle {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
   position: relative;
-  background: #f2f3f7;
-  padding: 1.5em;
+  background: #f7f2f2;
+  padding: 0.5em;
   margin-left: 60px;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
@@ -751,7 +769,7 @@ body.offcanvas .colorlib-nav-toggle {
   height: 0;
   border-style: solid;
   border-width: 9px 9px 9px 0;
-  border-color: transparent #f2f3f7 transparent transparent;
+  border-color: transparent #4fbb88 transparent transparent;
   left: 0;
   top: 10px;
   margin-left: -9px;
@@ -861,6 +879,11 @@ body.offcanvas .colorlib-nav-toggle {
   right: 0;
   content: "";
 }
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .services .icon:before {
   top: -30px;
   width: 0;
@@ -1467,7 +1490,7 @@ body.offcanvas .colorlib-nav-toggle {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 500;
-  height: 5em;
+  height: 0.5em;
   letter-spacing: 5px;
   margin-bottom: 10em;
   display: block;
@@ -1617,8 +1640,9 @@ body.offcanvas .colorlib-nav-toggle {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background: #44a4f2 !important;
-  border-color: #44a4f2 !important;
+  background: #ffffff !important;
+  border-color: #e41818 !important;
+  color: rgb(0, 0, 0);
 }
 .btn-primary.btn-outline {
   background: transparent;
@@ -1937,4 +1961,80 @@ body.offcanvas .colorlib-nav-toggle {
 
 .js .animate-box {
   opacity: 0;
+}
+
+.content {
+  display: none;
+}
+#loadMore {
+  width: 200px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: rgb(47, 168, 158);
+  transition: 0.3s;
+}
+#loadMore:hover {
+  color: rgb(47, 168, 158);
+  background-color: #fff;
+  border: 1px solid rgb(47, 168, 158);
+  text-decoration: none;
+}
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00b4cc;
+  border-right: none;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+}
+
+.searchButton {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
